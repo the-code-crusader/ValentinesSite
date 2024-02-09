@@ -28,13 +28,35 @@ function showMessage(response) {
   }
 
   if (response === "Yes") {
+  // Remove name message and no button
+  document.getElementById("name").remove();
+  document.getElementById("no-button").remove();
+
+  // Update text content, show message, and change image source to "dance.gif"
+  const yesMessage = document.getElementById("question");
+  yesMessage.textContent = "I love you so much";
+  const lineBreak = document.createElement("br");
+  yesMessage.appendChild(lineBreak);
+  const secondLine = document.createElement("span");
+  secondLine.textContent = "damdouma <3";
+  yesMessage.appendChild(secondLine);
+  yesMessage.style.display = "block";
+  yesMessage.style.fontStyle = "normal";
+  document.getElementsByClassName("image")[0].src = "images/dance.gif";
+
+  // Remove yes button
+  document.getElementById("yesButton").remove();
+  }
+  
+  /*
+  if (response === "Yes") {
     // Remove name message and no button
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
 
     // Update text content, show message, and change image source to "dance.gif"
     const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "LESGOOO see you on the 14th babygirl😘😘";
+    yesMessage.textContent = "I love you so much <br> damdouma <3";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/dance.gif";
@@ -42,4 +64,5 @@ function showMessage(response) {
     // Remove yes button
     document.getElementById("yesButton").remove();
   }
+  */
 }

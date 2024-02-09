@@ -6,14 +6,15 @@ body {
     justify-content: space-evenly;
     height: 100vh;
     margin: 0;
-    background: url('images/image.jpg') repeat;
+    background-image: url('images/a4.png');
+    background-size: cover;
     font-size: 35px;
     color: rgb(255, 0, 174);
+
 }
 .hh{
     -webkit-text-stroke: 2px #71004f;
     font-weight:900;
-
 }
 .pp{
     -webkit-text-stroke: 2px #71004f;
@@ -39,6 +40,7 @@ body
 
 .image{
     height: 280px;
+    border-radius: 20px;
     
 }
 
@@ -74,6 +76,7 @@ body
 .hidden-message {
     display: none;
     margin-top: 20px;
+    border-color: white;
 }
 
 .move {
